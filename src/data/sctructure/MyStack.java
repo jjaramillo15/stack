@@ -47,10 +47,14 @@ public class MyStack<T> {
     }
     
     public int size() {
-        return  stackIndex;
+        return stackIndex;
     }
     
     public boolean isEmpty() {
         return stackIndex == 0;
+    }
+    
+    public T peek() {
+        return data[stackIndex];
     }
 }
